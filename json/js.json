@@ -1,0 +1,143 @@
+{
+    "about":{
+            "title": "What is JavaScript",
+            "description": "JavaScript is a programming language commonly used in web development. it was originally developed by Netscape as a means to add dynamic and interactive element to websites. While JavaScript is influenced by Java, the syntax is more similar to C and is based on ECMAScript.  A scripting language developed by Sun Microsystems"
+    },
+    "types":[  
+        {
+            "title":"Variables",
+            "video":"https://www.youtube.com/embed/XgSjoHgy3Rk",
+            "code":{
+                "var":"containers for storing data or value.",
+                "let":"cannot be redeclared.",
+                "const":"const cannot be redeclared, reassigned, and have black scope."
+            }
+        },
+
+        {
+            "title":"Operators",
+            "video":"https://www.youtube.com/embed/ULNJSTSJc7s",
+            "code":{
+                "+":"Addition",
+                "-":"Subtraction",
+                "*":"Multiplication",
+                "/":"Division",
+                "...":"Spread Operator",
+                "%":"Modulus",
+                "++":"Increment numbers",
+                "--":"Decrement numbers"
+            }
+        
+     },
+     {
+        "title":"If Statement",
+        "video":"https://www.youtube.com/embed/IsG4Xd6LlsM",
+        "code":{
+            "if":"Where if condition is true, it used to specify execution for a block code.",
+            "else": "Where if the same condition is false it specifies the execution for a block of code.",
+            "else if":"This specifies a new test if the first condition is false."
+    }
+    },
+    {
+            "title":"Switch Statement",
+            "video":"https://www.youtube.com/embed/IsG4Xd6LlsM",
+            "code": {
+                "switch":"Is used to perform different actions based on different conditions.",
+                "break":"This will stop the execution instide the switch block.",
+                "default":"Specifies the code to run if t here is not case match."
+            }
+    },
+    {
+        "title": "Loops",
+        "video": "https://www.youtube.com/embed/Kn06785pkJg",
+        "code":{
+            "for":"The most common way to create a loop in JavaScript.",
+            "while":"Sets up condition under which a loop execute.",
+            "do while":"Similar to the while loop, however, it executes at least once and performs a checkat the end to see if the ocndition is met to execute again.",
+            "break":"Used to stop and exit the cycle at certain conditions.",
+            "continue":"Skip parts of the cycle if certain conditions are met."
+        }
+    },
+    {
+        "title":"Functions",
+        "video":"https://www.youtube.com/embed/N8ap4k_1QEQ",
+        "code":{
+            "alert()":"Output data in an alert in the browser window.",
+            "confirm()":"Opens up yes/no dialog and returns true/false depending on user click.",
+            "console.log()":"Writes information to the browser console, good for debugging purposes.",
+            "document.write()":"Creates an directly to the HTML document.",
+            "prompt()":"Creates an dialogue for user input",
+            "parseInt()":"Parse its argument and return an integer"
+        }
+    },
+    {
+        "title":"Strings",
+        "video":"https://www.youtube.com/embed/09BwruU4kiY",
+        "code":{
+            "chart()":"Return a character at a specified positioning inside a stirng.",
+            "concat()":"Concatenate (joins) two or more string into one",
+            "indexOf":"Provides the position of the first occurence of a specified text within a string.",
+            "match()":"Retrieves the matches of a string against a search pattern.",
+            "replace()":"Find and replace specified text in a string",
+            "slice()":"Extracts a section of string andd returns as a new string.",
+            "substring()":"Also simillar to slice() but can't accept negative indices.",
+            "toLowerCase()":"Concert String to lowercase.",
+            "toUpperCase()":"Concert String to uppercase.",
+            "valueOf():":"Return the primitive value of string object."
+        }
+    },
+    {
+        "title":"Array",
+        "video":"https://www.youtube.com/embed/8FmBEN0XZyI",
+        "code":{
+            "concat()":"Join serveral arrays into one.",
+            "indexOf()":"Return the first position at which at given element appears in an array.",
+            "pop()":"removes the last elemnt of array.",
+            "push()":"Add new elemnt at the end of the array.",
+            "reverse()":"Reverse the order of the elements in an array.",
+            "shift()":"Remove the first element of the array.",
+            "unshift()":"Convert string to lowercase.",
+            "sort()":"Sort elements aplhabetically.",
+            "toString()":"Converts elements to strings."
+        }
+    },
+    {
+        "title":"Objects",
+        "video":"https://www.youtube.com/embed/GihQAC1I39Q",
+        "code":{
+            "this":"Used inside the method to access the object's properties.",
+            "delete":"Removes a property from an object.",
+            "in":"Check if a property is exist in an object.",
+            "for...in":"iterates over properties of an object."
+        }
+    },
+    {
+        "title":"Events",
+        "video":"https://www.youtube.com/embed/mlxi1WUSO_8",
+        "code":{
+            "onClick":"The event occurs when the user clicks on an element.",
+            "onMouseOver":"when the pointer is moved onto an element or one of its children.",
+            "onKePress":"The moment the user starts pressing a key.",
+            "onScroll":"An element being scrollbar is being scrolled.",
+            "onFocus":"An element gets focus.",
+            "onInput":"A user input on an element.",
+            "onSelect":"The user selects some text (for input and textarea.",
+            "onSubmit":"A form is submitted."
+        }
+    },
+    {
+        "title":"Errors",
+        "video":"https://www.youtube.com/embed/cFTFtuEQ-10",
+        "code":{
+            "try":"Lets you define a block of code to test for error.",
+            "catch":"Set up a block of code to execute in case of an error.",
+            "throw":"Create custom error messages instead of the standard JavaScript errors.",
+            "finally":"Lets you execute code, after try and cactch, regardless of the result",
+            "RangeError":"A number is out of range",
+            "ReferenceError":"An illegal references has occurred",
+            "SyntaxError":"A syntax error has occurred",
+            "TypeError":"A type error has occurred"
+        }
+    }
+]
+}

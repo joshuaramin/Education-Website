@@ -1,0 +1,241 @@
+{
+    "about":{
+        "title":"What is CSS?",
+        "description":"A simple design language intended to simplify the process of making webpages presentable. When using CSS, you can control the color of the text, the style of fonts, the spacing between paragraphs, how th columns and rows are sized and laid out, what background images or colors are used, layout design, variation in display for different devices and screen size as well as a variety of other effects."
+    },
+    "types":[
+        {
+            "title":"Measurements Units",
+            "description":"CSS supports a number of measurements including absolute units such as inches, centimeters, points, and so on, as well as relative measures such as percentages and em units.",
+            "code":[
+                {
+                    "title": "%",
+                    "description":"Defines a measurement as a percentage relative to another value, typically an encolisiing element",
+                    "example":"p { font-size: 16pt; line-height: 125%}"
+                }, 
+                {
+                    "title":"cm",
+                    "description":"Defines a measurement in centimeters.",
+                    "example": "div {margin-bottom: 2cm;}"
+                },
+                 {
+                     "title":"em",
+                     "description":"A relative measurement for the height of a font in em spaces. Because an em unit is equivalent to the size of a given font, if you assign a font to 12pt, each `em` unit would be 12pt; thus, 2em would be 24pt.",
+                     "example":"p {letter-spacing: 7em;}"
+                 }, 
+                 {
+                     "title":"ex",
+                     "description":"This value defines a measurement relative to a font's x-height. The x-height is determined by the height of the font's lowercase letter x.",
+                     "example":"p {font-size: 24pt; line-height: 3ex;}"
+                 },
+                 {
+                     "title":"in",
+                     "description":"Defines a measurement in inches.",
+                     "example":"p {word-spacing: .15in;}"
+                 },
+                 {
+                     "title":"mm",
+                     "description":"Defines a measurement in millimeters.",
+                     "example":"p {word-spacing: 15mm;}"
+                 },
+                 {
+                     "title":"pc",
+                     "description":"Defines a measurement in picas. A pica is equivalent to 12 points; thus, there are 6 picas per inch.",
+                     "example":"p {font-size: 20pc;}"
+                 },
+                 {
+                     "title":"pt",
+                     "description":"Defines a measurement in points. A point is defined as 1/72nd of an inch.",
+                     "example":"body {font-size: 18pt;}"
+                 },
+                 {
+                     "title":"px",
+                     "description":"Defines a measurement in screen pixels.",
+                     "example":"p {padding: 25px;}"
+                 }
+            ]
+        },
+        {
+            "title":"Color",
+            "description":"CSS uses color values to specify a color. Typically, these are used to set a color either for the foreground of an element (i.e., its text) or else for the background of the element.",
+            "code":[
+                {
+                    "title":" Hex Codes",
+                    "description":"A hexadecimal is a 6 digit representation of a color. The first two digits(RR) represent a red value, the next two are a green value(GG), and the last are the blue value(BB).",
+                    "example":"#000000"
+                },
+                {
+                    "title":"Short Hex Codes",
+                    "description":"This is a shorter form of the six-digit notation. In this format, each digit is replicated to arrive at an equivalent six-digit value. For example: #6A7 becomes #66AA77.",
+                    "example":"#000"
+                },
+                {
+                    "title":"RGB Values",
+                    "description":"This color value is specified using the rgb( ) property. This property takes three values, one each for red, green, and blue. The value can be an integer between 0 and 255 or a percentage.",
+                    "example":"rgb(0,255,255)"
+                }
+            ]
+        },
+        {
+            "title":"Fonts",
+            "description":"font that is easy to read is important. The font adds value to your text. It is also important to choose the correct color and text size for the font.",
+            "code":[
+                {
+                    "title":"font-family",
+                    "description":"is used to change the face of a font.",
+                    "example":"font-family:georgia,garamond,serif;"
+                },
+                {
+                    "title":"font-style",
+                    "description":"is used to make a font italic or oblique.",
+                    "example":"font-style:italic;"
+                },
+                {
+                    "title":"font-variant",
+                    "description":" used to create a small-caps effect.",
+                    "example":"font-variant:small-caps;"
+                },
+                {
+                    "title":"font-weight",
+                    "description":" is used to increase or decrease how bold or light a font appears.",
+                    "example":"font-weight: bold;"
+                }
+            ]
+        },
+        {
+            "title":"Images",
+            "description":"Images play an important role in any webpage. Though it is not recommended to include a lot of images, but it is still important to use good images wherever required.",
+            "code": [
+                {
+                    "title":"border",
+                    "description":"is used to set the width of an image border.",
+                    "example":"border:0px"
+                },
+                {
+                    "title":"height ",
+                    "description":"is used to set the height of an image.",
+                    "example":"height:100px"
+                },
+                {
+                    "title":"Width ",
+                    "description":" is used to set the width of an image.",
+                    "example":"width:100px"
+                }
+            ]
+        },
+        {
+            "title":"Padding",
+            "description":"allows you to specify how much space shoul appear between the content of an element and its border The value of this attribute should be either a length, a percentage, or the word inherit",
+            "code":[
+                {
+                    "title":"padding-bottom",
+                    "description":"specifies the bottom padding of an element.",
+                    "example":"padding-bottom: 15px"
+                },
+                {
+                    "title":"padding-top",
+                    "description":"specifies the top padding of an element.",
+                    "example":"padding-top: 15px"
+                },
+                {
+                    "title":"padding-left ",
+                    "description":"specifies the left padding of an element.",
+                    "example":"padding-left: 15px"
+                },
+                {
+                    "title":"padding-right",
+                    "description":"specifies the right padding of an element.",
+                    "example":"padding-right: 15px"
+                }
+            ]
+        },
+        {
+            "title":"Margin",
+            "description":"the space around an HTML element. It is possible to use negative values to overlap content.",
+            "code":[
+                {
+                    "title":"margin-bottom",
+                    "description":"specifies the bottom margin of an element.",
+                    "example":"margin-bottom: 15px"
+                },
+                {
+                    "title":" margin-top",
+                    "description":"specifies the top margin of an element.",
+                    "example":"margin-top: 15px"
+                },
+                {
+                    "title":"margin-left",
+                    "description":"specifies the left margin of an element.",
+                    "example":"margin-left: 15px"
+                },
+                {
+                    "title":"margin-right",
+                    "description":"specifies the right margin of an element.",
+                    "example":"margin-right: 15px"
+                }
+            ]
+        },
+        {
+            "title":"Dimension",
+            "description":"een the border that surrounds every box ie. element, the padding that can appear inside each box and the margin that can go around them. In this tutorial we will learn how we can change the dimensions of boxes.",
+            "code":[
+                {
+                "title": "height",
+                "description": "used to set the height of a box.",
+                "example":"height:100px"
+            },
+            {
+                "title":"Width",
+                "description":"used to set the width of a box.",
+                "example":"width:400px"
+            },
+            {
+                "title":"line-height",
+                "description":"used to set the height of a line of text.",
+                "example":"line-height:30px;"
+            },
+            {
+                "title":"max-height",
+                "description":"used to set a maximum height that a box can be.",
+                "example":"max-height:10px"
+            },
+            {
+                "title":"min-height",
+                "description":"used to set the minimum height that a box can be",
+                "example":"min-height:200px"
+            },
+            {
+                "title":"max-width",
+                "description":"used to set the maximum width that a box can be.",
+                "example":"max-width:100px"
+            },
+            {
+                "title":"min-width",
+                "description":" used to set the minimum width that a box can be.",
+                "example":"min-width:400px"
+            }
+            ]
+        },
+        {
+            "title":"Positioning",
+            "description":"You can specify whether you want the element positioned relative to its natural position in the page or absolute based on its parent element.",
+            "code":[
+                {
+                    "title":"Relative",
+                    "description":"changes the position of the HTML element relative to where it normally appears.",
+                    "example":"position:relative; left:80px; top:2px"
+                },
+                {
+                    "title":"Absolute",
+                    "description":"positioned at the specified coordinates relative to your screen top-left corner.",
+                    "example":"position:absolute; left:80px; top:20px"
+                },
+                {
+                    "title":"Fixed",
+                    "description":" positioning allows you to fix the position of an element to a particular spot on the page, regardless of scrolling. Specified coordinates will be relative to the browser window.",
+                    "example":"position:fixed; left:80px; top:20px"
+                }
+            ]
+        }
+    ]
+}

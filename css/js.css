@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+:root {
+  --headings: "PT-sans"
+  --text: "Source Sans Pro"
+  --headingSize: 15px
+  --textSize: 18px
+}
+body {
+  width: 100%;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+aside {
+  height: 100%;
+  padding: 20px 10px;
+}
+.js {
+  width: 25rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.js::before{
+  width: 100%;
+  font-size: 2rem;
+  margin: 10px 0;
+  content: "JavaScript"
+}
+nav .li {
+  list-style-type: none;
+  padding: 10px 0;
+  font-size:1.2rem;
+}
+.li:hover {
+  color: #F06529
+}
+body aside {
+  float: left;
+  width: 40rem;
+  height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+li a {
+  text-decoration: none;
+  color: #000;
+}
+.js-a:hover {
+  color :#CEBB3C
+}
+body .container {
+  height: auto;
+  overflow-y: visible;
+  padding: 20px;
+}
+
+.container article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+article .title {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+ article > div {
+  width: 100%;
+  height: 100%;
+  margin: 10px 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ div > .js-h2 {
+  width: auto;
+  height: auto;
+  margin: 10px 0;
+  justify-content: flex-start;
+  font-size: 2rem;
+  font-family: var(--heading);
+}
+
+div > table {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+table > tbody{
+  width: 60%;
+  padding: 10px;
+}
+
+tbody > tr{
+  width: 100%;
+}
+tr > th {
+  font-size: 1.3rem;
+  font-family: 'PT Sans';
+  border: 1px solid #000;
+}
+tr > td {
+  width: 20rem;
+  height: 3rem;
+  font-family: 'Source Sans Pro';
+  border: 1px solid #000;
+  padding: 10px;
+}

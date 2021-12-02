@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/js.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Final Project 2608</title>
+</head>
+<script>
+    (function hello() {
+        fetch("../asset/header.html")
+            .then((res) => {
+                return res.text();
+            })
+            .then((data) => {
+                document.querySelector("header").innerHTML = data
+            })
+            .catch((err) => {
+                console.error({ err });
+            });
+    })()
+
+</script>
+
+<body>
+    <header></header>
+    <main class="Home" id="Home">
+        <div>
+            <img src="./images/logo/fontDevLogo.png" alt="logo" height="120">
+            <h3>Learn the basics of Building Website pages using HTML, CSS, and JavaScript for free.</h3>
+            <button id="getStarted">Get Started</button>
+        </div>
+    </main>
+    <section class="Fundamentals" id="Fundamentals">
+        <h2>Fundamentals</h2>
+        <p>This course will only focus on the principles of the web HTML, CSS, and JavaScript. It also teaches you how
+            to use the proper syntax and folder structure. If you have already downloaded some text editor or IDE, feel
+            free to use that.</p>
+        <div class="grid">
+            <div class='html' id="html">
+                <img src="./images/image/html.png" alt="html" width="90" height="90" />
+                <h2><a href="/pages/Html.html">HTML</a></h2>
+            </div>
+            <div class="css" id="css">
+                <img src="./images/image/css.png" alt="css" width="120" height="120" />
+                <h2><a href="/pages/css.html">CSS</a></h2>
+            </div>
+            <div class="javascript" id="javascript">
+                <img src="./images/image/js.png" alt="javascript" width="200" height="110" />
+                <h2><a href="/pages/javascript.html">JavaScript</a></h2>
+            </div>
+        </div>
+    </section>
+    <section class="About" id="About">
+        <h2>About</h2>
+        <div class="grid">
+            <img src="images/logo/fontDevLogo.png" alt="logo" height="260" width="550">
+            <span>FrontDev is about creating a website from scratch, but before that, you need to know the fundamentals
+                of the website, the fundamentals of creating a website are HTML, CSS, and JavaScript. This platform will
+                guide you through the basics of creating a simple website. Also, this is a free learning guide for
+                beginners like you.</span>
+        </div>
+    </section>
+    <script>
+        const html = document.getElementById("html")
+        html.addEventListener("click", () => {
+            window.location.href = "/pages/Html.html"
+        })
+
+        const css = document.getElementById("css")
+
+        css.addEventListener("click", () => {
+            window.location.href = "/pages/css.html"
+        })
+
+        const js = document.getElementById("javascript")
+        js.addEventListener("click", () => {
+            window.location.href = "/pages/javascript.html"
+        })
+
+        const started = document.getElementById("getStarted")
+        started.addEventListener("click", () => {
+            window.location.href = "#Fundamentals"
+        })
+    </script>
+</body>
+
+</html>

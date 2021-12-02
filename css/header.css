@@ -1,0 +1,21 @@
+header {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+header .header_nav {
+}
+.header_nav .header_ul {
+  display: flex;
+  height: 10vh;
+  width: 100%;
+  align-items: center;
+}
+
+.header_ul .header_li {
+  list-style-type: none;
+  padding: 10px;
+  margin: 0 5px;
+}
